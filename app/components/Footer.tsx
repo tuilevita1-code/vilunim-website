@@ -1,22 +1,24 @@
+import { BUSINESS_EMAIL, TAGLINE } from "../lib/constants";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-midnight border-t border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           {/* Brand */}
           <div className="flex flex-col gap-2">
             <span className="font-serif text-xl font-semibold text-cream tracking-wide">
               Vilunim
             </span>
+            <p className="text-sm text-cream/50 max-w-xs">{TAGLINE}</p>
             <a
-              href="mailto:tui@vilunim.com"
+              href={`mailto:${BUSINESS_EMAIL}`}
               className="text-sm text-cream/50 hover:text-cream/80 transition-colors duration-200"
             >
-              tui@vilunim.com
+              {BUSINESS_EMAIL}
             </a>
-            <p className="text-xs text-cream/30">vilunim.com</p>
           </div>
 
           {/* Links */}
@@ -25,7 +27,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/privacy"
-                  className="text-sm text-cream/50 hover:text-cream/80 transition-colors duration-200 cursor-pointer"
+                  className="text-sm text-cream/50 hover:text-cream/80 transition-colors duration-200"
                 >
                   Privacy Policy
                 </a>
@@ -33,9 +35,9 @@ export default function Footer() {
               <li>
                 <a
                   href="/terms"
-                  className="text-sm text-cream/50 hover:text-cream/80 transition-colors duration-200 cursor-pointer"
+                  className="text-sm text-cream/50 hover:text-cream/80 transition-colors duration-200"
                 >
-                  Terms
+                  Terms of Service
                 </a>
               </li>
             </ul>
@@ -46,7 +48,7 @@ export default function Footer() {
           <p className="text-xs text-cream/30">
             &copy; {currentYear} Vilunim. All rights reserved.
           </p>
-          <p className="text-xs text-cream/30">Built in New Zealand</p>
+          <p className="text-xs text-cream/30">Built in New Zealand 🇳🇿</p>
         </div>
       </div>
     </footer>

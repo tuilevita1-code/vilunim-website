@@ -1,18 +1,18 @@
 const steps = [
   {
     number: "01",
-    heading: "We set Lydia up for your business",
-    body: "Tell us about your trade, your typical jobs, and how you like to work. We configure Lydia specifically for you and have her live within 48 hours.",
+    heading: "We connect your Xero",
+    body: "We get read access to your Xero account and connect it to the automation system. Nothing new for you to learn — your workflow stays exactly the same.",
   },
   {
     number: "02",
-    heading: "Lydia answers every call in your name",
-    body: "Callers hear a professional receptionist representing your business. Lydia asks the right questions, collects the details, and handles the conversation naturally.",
+    heading: "We build your system",
+    body: "We configure your reminder sequences, late fee rules, SMS templates, and branding. Every detail is tailored to your business.",
   },
   {
     number: "03",
-    heading: "You get the lead — ready to quote",
-    body: "After every call, you receive a summary with the caller's name, job description, and contact number. Ring them back when you're ready.",
+    heading: "It runs on autopilot",
+    body: "Every invoice is tracked and followed up automatically. You focus on the work. We handle the rest.",
   },
 ];
 
@@ -25,17 +25,15 @@ export default function HowItWorks() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-2xl">
-          <p className="text-forest text-sm font-semibold uppercase tracking-widest">
-            Simple by design
-          </p>
           <h2
             id="how-it-works-heading"
-            className="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-midnight leading-snug"
+            className="font-serif text-3xl sm:text-4xl font-semibold text-midnight leading-snug"
           >
-            Up and running in 48 hours.
+            Set up in an afternoon. Runs forever.
           </h2>
           <p className="mt-4 text-base text-midnight/60 leading-relaxed">
-            No technical setup. No new equipment. We handle everything.
+            We handle all the technical work. You just give us Xero access and
+            answer a few questions about how your business operates.
           </p>
         </div>
 

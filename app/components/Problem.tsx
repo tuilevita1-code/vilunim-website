@@ -12,13 +12,12 @@ const problems = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={1.5}
-          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
         />
       </svg>
     ),
-    stat: "62%",
-    heading: "Calls go unanswered",
-    body: "Most tradies miss more than half their incoming calls while on the tools. Every ring you can't answer is a potential customer choosing someone else.",
+    heading: "You finish the job. They don't pay.",
+    body: "You've done the work, sent the invoice, and now you're waiting. Days turn into weeks. The silence is costing you.",
   },
   {
     icon: (
@@ -33,13 +32,12 @@ const problems = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={1.5}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"
         />
       </svg>
     ),
-    stat: "80%",
-    heading: "Callers don't leave a message",
-    body: "When a caller hits voicemail, most hang up and ring your competitor instead. You never even know the job existed.",
+    heading: "Chasing invoices is killing your time.",
+    body: "Every follow-up is another call, another email, another awkward conversation. You're running a trades business, not a debt collection agency.",
   },
   {
     icon: (
@@ -58,9 +56,8 @@ const problems = [
         />
       </svg>
     ),
-    stat: "$50k+",
-    heading: "A receptionist costs too much",
-    body: "A full-time receptionist runs $50,000+ per year — far too expensive for most trade businesses. So the phone keeps going unanswered.",
+    heading: "Late payments are costing you more than you think.",
+    body: "Cash stuck in unpaid invoices means you can't pay suppliers, take on new jobs, or grow. The problem compounds every month you let it slide.",
   },
 ];
 
@@ -73,12 +70,12 @@ export default function Problem() {
             id="problem-heading"
             className="font-serif text-3xl sm:text-4xl font-semibold text-midnight leading-snug"
           >
-            You&rsquo;re too busy working to answer the phone — but unanswered
-            phones cost you money.
+            Sound familiar?
           </h2>
           <p className="mt-4 text-base text-midnight/60 leading-relaxed">
-            It&rsquo;s not your fault. You&rsquo;re on the tools doing the job.
-            But every call you miss is a job someone else booked.
+            Late payment is the number one cash flow problem for NZ trade
+            businesses. And most businesses handle it the same broken way —
+            manually, awkwardly, and too late.
           </p>
         </div>
 
@@ -89,9 +86,6 @@ export default function Problem() {
               className="flex flex-col gap-4 p-6 rounded-xl bg-white shadow-sm border border-midnight/8"
             >
               <div className="text-forest">{p.icon}</div>
-              <p className="font-serif text-4xl font-bold text-midnight">
-                {p.stat}
-              </p>
               <div>
                 <h3 className="font-semibold text-midnight text-base">
                   {p.heading}

@@ -4,29 +4,29 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Does Lydia sound like a real person?",
+    question: "Do I need to switch accounting software?",
     answer:
-      "Yes. Lydia uses advanced voice AI trained to sound professional and conversational. She responds naturally, handles pauses, and adapts to how the caller speaks. The vast majority of callers don't realise they're speaking with an AI.",
+      "No. We work with your existing Xero account. Nothing changes on your end — your invoicing workflow stays exactly the same. We simply connect to Xero and layer the automation on top.",
   },
   {
     question: "How long does setup take?",
     answer:
-      "We have Lydia live for your business within 48 hours of signing up. We handle all the configuration — you just need to answer a few questions about your trade and how you like to work. No technical knowledge required.",
+      "One afternoon. We handle everything — you just give us Xero access and we build the whole system. Your first automated reminder can go out the same day.",
   },
   {
-    question: "What happens if a call is urgent?",
+    question: "What if a client disputes a charge?",
     answer:
-      "You decide what counts as urgent — an emergency plumbing job, a power outage, anything that can't wait. Lydia identifies these situations and sends you an immediate alert so you can follow up straight away.",
+      "The system pauses automatically when a dispute is flagged. You stay in control at all times — no automated messages will go out on a disputed invoice without your approval.",
   },
   {
-    question: "Do I need any special equipment?",
+    question: "Is there an ongoing software cost?",
     answer:
-      "No. Lydia works with your existing phone number — there's nothing to install and no new hardware to buy. We redirect calls through Lydia at the network level, completely seamlessly.",
+      "Yes — around $67 NZD/month paid directly to the software provider. That covers up to 150 invoices per month. This is separate from Vilunim's setup and service fee.",
   },
   {
     question: "Can I cancel anytime?",
     answer:
-      "Yes. There are no lock-in contracts. If you decide Vilunim isn't right for your business, cancel with 30 days' notice and we'll wind everything down cleanly. We're confident you won't want to.",
+      "Yes. No contracts, no lock-in. Cancel anytime and we'll wind the system down cleanly. We're confident you won't want to once the cash starts flowing faster.",
   },
 ];
 
@@ -38,17 +38,14 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-white" aria-labelledby="faq-heading">
+    <section id="faq" className="bg-cream" aria-labelledby="faq-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-forest text-sm font-semibold uppercase tracking-widest">
-            Common questions
-          </p>
           <h2
             id="faq-heading"
-            className="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-midnight leading-snug"
+            className="font-serif text-3xl sm:text-4xl font-semibold text-midnight leading-snug"
           >
-            Everything you need to know.
+            Common questions
           </h2>
         </div>
 
