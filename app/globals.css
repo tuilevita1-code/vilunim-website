@@ -5,7 +5,7 @@
   --color-forest: #566C58;
   --color-cream: #F4EFE8;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, Cambria, serif;
+  --font-serif: var(--font-syne), Georgia, Cambria, serif;
 }
 
 html {

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Syne, Inter } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vilunim — AI Voice Receptionist for NZ Trades",
+  title: "Vilunim — Get Paid Faster. Automated Cash Flow for NZ Trades.",
   description:
-    "Never miss another job. Lydia is your AI voice receptionist — she answers every call 24/7, qualifies leads, and delivers them straight to you.",
+    "Vilunim connects your Xero account to a powerful automation system that handles every invoice follow-up — automatically. Stop chasing. Start getting paid.",
   openGraph: {
-    title: "Vilunim — AI Voice Receptionist for NZ Trades",
+    title: "Vilunim — Get Paid Faster. Automated Cash Flow for NZ Trades.",
     description:
-      "Never miss another job. Lydia answers every call 24/7 so you can focus on the work.",
+      "The work is done. The money should follow. Automated invoice follow-up for NZ trade businesses.",
     url: "https://vilunim.com",
     siteName: "Vilunim",
     locale: "en_NZ",
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${syne.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
